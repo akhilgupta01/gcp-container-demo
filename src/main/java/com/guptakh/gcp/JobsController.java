@@ -10,7 +10,7 @@ import java.util.List;
 @RestController
 public class JobsController {
 
-    @GetMapping("/jobs/{jobName")
+    @GetMapping("/jobs/{jobName}")
     public String runJob(@PathVariable String jobName){
         System.out.println("Starting job " + jobName);
         List<Integer> primeNumbers = new ArrayList<>();
